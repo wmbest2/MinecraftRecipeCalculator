@@ -18,21 +18,33 @@
     { "name": "Sand", "type": 0 },
     { "name": "Sandstone", "type": 0 },
     { "name": "Glass", "type": 0 },
-    { "name": "Redstone", "type": 0 },
+    { "name": "Redstone Dust", "type": 0 },
     { "name": "Coal", "type": 0 },
     { "name": "Iron Ingot", "type": 0 },
     { "name": "Gold Ingot", "type": 0 },
+    { "name": "Slimeball", "type": 0 },
+    { "name": "Gunpowder", "type": 0 },
+    { "name": "TNT Block", "type": 1, "ingredients": [ { "name": "Sand", "count": 4 }, { "name": "Gunpowder", "count": 5 } ]},
     { "name": "Diamond", "type": 0 },
     { "name": "Block of Diamond", "type": 0 },
     { "name": "Torch", "type": 1, "makes": 4, "ingredients": [ { "name": "Sticks" }, { "name": "Coal" } ]},
-    { "name": "Redstone Torch", "type": 1, "ingredients": [ { "name": "Sticks" }, { "name": "Redstone" } ]},
+    { "name": "Redstone Torch", "type": 1, "ingredients": [ { "name": "Sticks" }, { "name": "Redstone Dust" } ]},
     { "name": "Redstone Repeater", "type": 1, 
         "ingredients": [ 
             { "name": "Redstone Torch", "count" : 2 }, 
-            { "name": "Redstone" },
+            { "name": "Redstone Dust" },
             { "name": "Stone", "count": 3 }
         ]
-    }
+    },
+    { "name": "Piston", "type": 1, 
+        "ingredients": [
+            { "name": "Wood Planks", "count": 3 },
+            { "name": "Cobblestone", "count": 4 },
+            { "name": "Redstone Dust" },
+            { "name": "Iron Ingot" }
+        ]
+    },
+    { "name": "Sticky Piston", "type": 1, "ingredients": [ { "name": "Piston" }, { "name": "Slimeball" }]}
 ]}
     
 
