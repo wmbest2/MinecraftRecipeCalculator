@@ -1,0 +1,39 @@
+{"recipes":[   
+    { "name": "Wood", "type": 0 },
+    { "name": "Wood Planks", "type": 1, "makes": 4, "ingredients": [ { "name": "Wood" } ]},
+    { "name": "Sticks", "type": 1, "makes": 4, "ingredients": [ { "name": "Wood Planks", "count": 2 } ] },
+    { "name": "Crafting Table", "type": 1, "ingredients": [ { "name": "Wood Planks", "count": 4 }]},
+    { "name": "Wooden Pickaxe", "type": 1, "ingredients": [ { "name": "Wood Planks", "count": 3 }, { "name": "Sticks", "count": 2 }]},
+    { "name": "Wooden Axe", "type": 1, "ingredients": [ { "name": "Wood Planks", "count": 3 }, { "name": "Sticks", "count": 2 }]},
+    { "name": "Wooden Sword", "type": 1, "ingredients": [ { "name": "Wood Planks", "count": 2 }, { "name": "Sticks" }]},
+    { "name": "Wooden Hoe", "type": 1, "ingredients": [ { "name": "Wood Planks", "count": 2 }, { "name": "Sticks", "count": 2 }]},
+    { "name": "Stone", "type": 0 },
+    { "name": "Cobblestone", "type": 0 },
+    { "name": "Cobblestone Pickaxe", "type": 1, "ingredients": [ { "name": "Cobblestone", "count": 3 }, { "name": "Sticks", "count": 2 }]},
+    { "name": "Cobblestone Axe", "type": 1, "ingredients": [ { "name": "Cobblestone", "count": 3 }, { "name": "Sticks", "count": 2 }]},
+    { "name": "Cobblestone Sword", "type": 1, "ingredients": [ { "name": "Cobblestone", "count": 2 }, { "name": "Sticks" }]},
+    { "name": "Cobblestone Hoe", "type": 1, "ingredients": [ { "name": "Cobblestone", "count": 2 }, { "name": "Sticks", "count": 2 }]},
+    { "name": "Dirt", "type": 0 },
+    { "name": "Gravel", "type": 0 },
+    { "name": "Sand", "type": 0 },
+    { "name": "Sandstone", "type": 0 },
+    { "name": "Glass", "type": 0 },
+    { "name": "Redstone", "type": 0 },
+    { "name": "Coal", "type": 0 },
+    { "name": "Iron Ingot", "type": 0 },
+    { "name": "Gold Ingot", "type": 0 },
+    { "name": "Diamond", "type": 0 },
+    { "name": "Block of Diamond", "type": 0 },
+    { "name": "Torch", "type": 1, "makes": 4, "ingredients": [ { "name": "Sticks" }, { "name": "Coal" } ]},
+    { "name": "Redstone Torch", "type": 1, "ingredients": [ { "name": "Sticks" }, { "name": "Redstone" } ]},
+    { "name": "Redstone Repeater", "type": 1, 
+        "ingredients": [ 
+            { "name": "Redstone Torch", "count" : 2 }, 
+            { "name": "Redstone" },
+            { "name": "Stone", "count": 3 }
+        ]
+    }
+]}
+    
+
+        
