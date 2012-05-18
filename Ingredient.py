@@ -32,14 +32,19 @@ class Recipe(Material):
         for i in self.ingredients:
             i.material.output_totals(totals, float(count) * (float(i.count) / i.material.makes))
 
+    def print_ingredients(self):
+        print Material.output_for_count(self);
+        print "Ingredients ------------------------------------"
+        for i in self.ingredients:
+            print "  " + str(int(i.count)) + " " + i.material.name
+
     def print_totals(self):
         totals = dict()
         self.output_totals(totals, 1.0)
 
-        print Material.output_for_count(self);
         print "Totals -----------------------------------------"
         for k in totals.keys():
-            print k + " " + str(math.ceil(totals[k]))
+            print "  " + k + " " + str(int(math.ceil(totals[k])))
 
     @staticmethod
     def load_from_json(json):

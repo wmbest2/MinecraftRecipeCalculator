@@ -10,5 +10,7 @@ recipes = Recipe.load_from_json(items);
 
 my_recipe = Recipe("Cool stuff ahead")
 my_recipe.ingredients.append(Ingredient(recipes['Redstone Repeater'], 1))
+my_recipe.print_ingredients()
+print ""
 my_recipe.print_totals()
 
