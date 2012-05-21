@@ -1,4 +1,5 @@
 import math
+import json
 
 class ImageChunk:
     pass
@@ -65,6 +66,13 @@ class Recipe(Material):
                 recipes[i['name']] = recipe
         return recipes
 
+    @staticmethod
+    def load_from_file(filename):
+        item_data = open(filename)
+        items = json.load(item_data)['recipes']
+        item_data.close()
+
+        return Recipe.load_from_json(items)
 
 class Ingredient:
     def __init__(self, material, count = 1.0):
